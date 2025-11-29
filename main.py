@@ -100,8 +100,8 @@ def send_join_prompt(chat_id):
     clean = clean_channel_username()
     kb = InlineKeyboardMarkup()
     if clean:
-        kb.add(InlineKeyboardButton("🔗 Join Channel", url=f"https://t.me/{clean}"))
-    text = f"🚫 Please join our channel {REQUIRED_CHANNEL} to continue using this bot\n\nAfter joining, send the text again"
+        kb.add(InlineKeyboardButton("🔗 Join", url=f"https://t.me/{clean}"))
+    text = f"First, join my channel 😜"
     try:
         bot.send_message(chat_id, text, reply_markup=kb)
     except Exception:
