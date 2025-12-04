@@ -200,8 +200,7 @@ def help_message(message):
         "[whispers] Secrets…\n"
         "[confidently] I am your voice.\n\n"
         "Daily limit: 90 requests for global.\n"
-        "If you exceed the limit, you must wait until the next day or pay $10 for unlimited monthly usage.\n"
-        "Contact @orlaki for unlimited access."
+        "If you exceed the limit, you must wait until the next dey."
     )
     bot.send_message(message.chat.id, txt)
 
