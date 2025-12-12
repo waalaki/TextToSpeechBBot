@@ -33,7 +33,7 @@ def start(message):
     keyboard = create_voice_keyboard()
     bot.send_message(
         message.chat.id,
-        f"Text to Speech bot waa bilaabmay! Codka hadda la doortay waa: {CURRENT_VOICE_LABEL}.\n\nQoraal ii soo dir si aan cod ugu badalo.",
+        f"Soo dhawow waxaan ahay Somali Text to Speech bot! default voice waa: {CURRENT_VOICE_LABEL}.\n\nQoraal ii soo dir si aan cod ugu badalo.",
         reply_markup=keyboard,
         reply_to_message_id=message.message_id
     )
