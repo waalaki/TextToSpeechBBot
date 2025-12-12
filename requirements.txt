@@ -4,4 +4,4 @@ python-dotenv
 flask
 edge-tts
 asyncio
-edge-tts==7.0.0
+edge-tts
