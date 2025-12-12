@@ -3,3 +3,4 @@ pyTelegramBotAPI>=4.0.0
 python-dotenv>=1.2.1
 flask
 edge-tts>=6.1.9
+asyncio
