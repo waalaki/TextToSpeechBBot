@@ -28,7 +28,7 @@ user_pitch_settings = {}
 
 def generate_tts_filename(user_id):
     safe_id = str(user_id).replace(" ", "_")
-    return os.path.join(DOWNLOADS_DIR, f"somttsBot_{safe_id}_{int(time.time()*1000)}.mp3")
+    return os.path.join(DOWNLOADS_DIR, f"Codka_{safe_id}_{int(time.time()*1000)}.mp3")
 
 def create_voice_keyboard():
     keyboard = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=False)
@@ -139,10 +139,10 @@ def handle_text(message):
             bot.send_audio(
                 message.chat.id,
                 audio,
-                caption=f"{CURRENT_VOICE_LABEL} - Somali TTS",
+                caption=f"{CURRENT_VOICE_LABEL} - SomTTS Bot",
                 reply_to_message_id=message.message_id,
-                title=f"tts_{user_id}_{int(time.time())}",
-                performer="Somali TTS Bot"
+                title=f"Codka_{user_id}_{int(time.time())}",
+                performer="SomTTS Bot"
             )
     except Exception as e:
         bot.send_message(
