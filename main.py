@@ -1132,18 +1132,7 @@ async def synth_and_send_tts(chat_id: int, user_id: str, text: str, reply_to_mes
             bot.send_message(chat_id, "❌ Failed to create the audio. The text may be invalid. Please try a different text.")
             return
 
-        caption_text = (
-           "🎧 Here is your voice\n\n"
-    f"Voice: *{voice_display_name}*\n"
-    f"Pitch: *{pitch}*\n"
-    f"Rate: *{rate}*\n\n"
-    "Bot Supports Commands:\n"
-    "/start - Change the voice actor\n"
-    "/rate - Change voice speed\n"
-    "/pitch - Change voice pitch\n\n"
-    "Save to your phone 💗"
-        )
-
+   
         with open(filename, "rb") as f:
             try:
                 bot.send_audio(
